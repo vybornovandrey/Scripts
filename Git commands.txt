@@ -1,0 +1,61 @@
+git init . #Инициализация локального репозитория
+git status
+git add script.sh  #Добавить в отслеживаемые
+git rm --cached script.sh  #Удалить из отслеживаемых
+git rm -f script.sh  #Удалить с диска
+git add .  #Отслеживаются все файлыв т.ч. gitignore
+touch .gitignore  #Вносим в него файлы и папки для игнорирования
+git commit -m "Initial commit"  # -m - message
+
+git log  #Просмотр изменений
+git log -1 # Посмотреть последний коммит (-2 два последних коммита)
+git log -1 -p # Посмотреть изменения внесенные последним коммитом
+git diff --staged #Показывает изменения с последнего коммита
+git checkout -- file1.txt  #Отменяе изменения в файле file1.txt
+
+
+Git global setup
+
+git config --global user.name "Andrey Vybornov"
+git config --global user.email "andv1983@yandex.ru"
+
+git config -l #Проверка настроек пользователя
+nano .gitconfig  #Ручное редактирование параметров
+
+Create a new repository
+
+git clone git@192.168.0.10:andrey/bash_scripts.git
+cd bash_scripts
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+git remote -v  #Просмотр способа связи с GitHub
+git remote set-url origin git@github.com:vybornovandrey/Scripts.git  #Замена аутентификации на SSH
+
+Push an existing folder
+
+cd existing_folder
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@192.168.0.10:andrey/bash_scripts.git
+git push -u origin master
+
+Push an existing Git repository
+
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin git@192.168.0.10:andrey/bash_scripts.git
+git push -u origin --all
+git push -u origin --tags
+
+ВЕТВЛЕНИЕ
+
+git branch develope  # Добавляем ветку develope
+git branch  # Просмотр всех веток
+git checkout develope  # Переход на ветку develope
+git checkout -b develope  # Создание и переход на ветку develope одной коммандой
+git branch -d develope  # Удаление ветки
+git merge develope  # Соединяем ветки (запускаем из ветки main)
