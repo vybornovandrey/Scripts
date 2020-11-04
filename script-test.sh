@@ -2,4 +2,3 @@
 
 echo `uptime`
 echo `date`
-echo "Privet"
