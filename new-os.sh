@@ -4,8 +4,8 @@ echo "*  Begin update new CentOS 7  *"
 echo "*******************************"
 sleep 5
 
-yum install epel-release
-yum update
+yum install -y epel-release
+yum update -y
 yum install -y \
     atop \
     bind-utils \
