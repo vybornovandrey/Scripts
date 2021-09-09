@@ -15,7 +15,7 @@ yum install -y \
     iftop \
     nano \
     net-tools \
-	tcpdump \
+    tcpdump \
     tmux \
     traceroute \
     tree \
