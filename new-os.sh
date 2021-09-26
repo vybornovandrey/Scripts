@@ -25,6 +25,7 @@ yum install -y \
 
 #Добавляем пользователя
 useradd andrey
+echo "andrey:qwerty" | chpasswd
 usermod -aG wheel andrey
 
 mkdir /home/andrey/.ssh && chown andrey:andrey /home/andrey/.ssh && chmod 700 /home/andrey/.ssh
