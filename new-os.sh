@@ -10,13 +10,13 @@ yum install -y \
     atop \
     bind-utils \
     bzip2 \
-    screen \
     gdisk \
     git \
     htop \
     iftop \
     nano \
     net-tools \
+    screen \
     tcpdump \
     tmux \
     traceroute \
