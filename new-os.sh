@@ -6,10 +6,12 @@ echo "*******************************"
 yum install -y epel-release
 yum update -y
 yum install -y \
+    ansible \
     atop \
     bind-utils \
     bzip2 \
     gdisk \
+    git \
     htop \
     iftop \
     nano \
@@ -25,7 +27,7 @@ yum install -y \
 
 #Добавляем пользователя
 useradd andrey
-echo "andrey:qwerty" | chpasswd
+echo "andrey:$1" | chpasswd
 usermod -aG wheel andrey
 
 mkdir /home/andrey/.ssh && chown andrey:andrey /home/andrey/.ssh && chmod 700 /home/andrey/.ssh
@@ -46,3 +48,7 @@ systemctl disable firewalld
 
 #Отключаем SElinux
 sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
+
+echo "*******************************"
+echo "*      SElinux disabled       *"
+echo "*******************************"
