@@ -36,7 +36,15 @@ touch /home/andrey/.ssh/authorized_keys && chown andrey:andrey /home/andrey/.ssh
 
 # add ssh key for user andrey
 cat > /home/andrey/.ssh/authorized_keys <<EOF
-ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyH4Ozx/OsK7lxLv+HQnX9Kh2inorKlUCTe8oXia+SCQHIHMnLKgydSjY/wLUDhTHPiSwX9WLXQYIRMRSCOq5ThOvRBNhXqXTEsAarYiYrtqt5YhiwVGZtLA7ZpR/g6tu07cqJY7SBwH1QkIP3wN8zWjdM9UjqdacA/13hVRRn/Li2P9BaWAG8FkfAf75j83WPL803plaMYWbDO54t/eLl7qLMdaKkmPx+IH7wOSjhlkzdt2LjDUbi2VWC9Xptvv47gABteXlrOXalZzVGsY8m9vkMJPQXTfaD9C6I5cvif7J/vYKmV8OKFgW/SSXbFGZoD1vLExwqaMC07MW3+yvxQ== anvy0321@WS-14493
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "hp-probook"
+AAAAB3NzaC1yc2EAAAABJQAAAQEAtxQKUzK5zdE29WgZs7aH01ZRq/Pt58jiqxr5
+iUbWxor1G1tB03FcNs+2JNuiIE8aAhkyJs0SKiOqvB0rzMRqz+Ors/pZ8VMwOkTA
+9aKnp/JHXJ3squ1DgXyyjFeR3WxIPAIB5EEYGWGf6OR7Mj+/Vi86ao6Ejw21pSdg
+3VmE4LdH1J28DZ4IBxwxVp4Dgajijnzguo3DtwjEPM1J7LJMfzkB2+PbMDpETxJa
+7vDyyd3nsmsoxqSEMOs0kIjFvlR1tNaIxUg7+c23UhDjrp1YYp0mFGmJeSv9d4P+
+24xQRHEZaGqYXvZti05lZtIsF8qY6I7ACLwYLFAXm4pZmi5Pxw==
+---- END SSH2 PUBLIC KEY ----
 EOF
 
 #Настраиваем (отключаем) firewall
