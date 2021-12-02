@@ -53,3 +53,4 @@ sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
 echo "*******************************"
 echo "*      SElinux disabled       *"
 echo "*******************************"
+
